@@ -6,7 +6,9 @@ write_key = os.environ.get('write_key').    # GitHub action needs to set env var
 mw = MicroWriter(write_key=write_key)
 assert mw.key_difficulty(mw.write_key)>=12, "You need a key of difficulty 12 to create a stream"
 
-REPOS = ['microprediction','neuralprophet','deepecho']
+REPOS = ['microprediction','neuralprophet','deepecho','auto_ts','pykalman','filterpy',
+         'pydlm','simdkalman','fbprophet','pmdarima','pyflux',
+         'divinity','tigramite']
 
 if __name__=='__main__':
   # Intended to be run once a day
