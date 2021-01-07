@@ -1,2 +1,2 @@
 # streamcreator
-stream creator
+stream creator example
