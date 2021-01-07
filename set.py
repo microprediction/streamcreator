@@ -11,7 +11,7 @@ REPOS = ['microprediction','neuralprophet','deepecho']
 if __name__=='__main__':
   # Intended to be run once a day
   for repo in REPOS:
-     value = getjson('https://pypistats.org/api/packages/microprediction/recent')['data']['last_day']
+     value = getjson('https://pypistats.org/api/packages/'+repo+'/recent')['data']['last_day']
      name  = 'downloads_'+repo+'.json'
      mw.write(name=name,value=value)
      
