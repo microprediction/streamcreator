@@ -2,7 +2,7 @@ name: daily set
 
 on:
   schedule:
-    - cron:  '10 10 * * *'
+    - cron:  '11 10 * * *'
 
 defaults:
   run:
