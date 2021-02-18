@@ -7,6 +7,8 @@ mw = MicroWriter(write_key=write_key)
 assert mw.key_difficulty(mw.write_key)>=12, "You need a key of difficulty 12 to create a stream"
 print(mw.animal)
 
+# This example updates 13 different streams, pushing the daily download stats
+
 REPOS = ['microprediction','neuralprophet','deepecho','auto_ts','pykalman','filterpy',
          'pydlm','simdkalman','fbprophet','pmdarima','pyflux',
          'divinity','tigramite']
